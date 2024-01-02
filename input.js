@@ -6,13 +6,16 @@ const handleUserInput = function (data) {
       process.exit();
     }else if (data.toString().toUpperCase() === 'W'){
       connection.write("Move: up");
-      connection.write("Say: go up")
+      connection.write("Say: go up");
     }else if (data.toString().toUpperCase() === 'A'){
       connection.write("Move: left");
+      connection.write("Say: ");
     }else if (data.toString().toUpperCase() === 'S'){
       connection.write("Move: down");
+      connection.write("Say: ");
     }else if (data.toString().toUpperCase() === 'D'){
       connection.write("Move: right");
+      connection.write("Say: ");
     }
   };
 
