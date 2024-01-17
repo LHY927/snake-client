@@ -13,7 +13,11 @@ const connect = function () {
   
     conn.on("connect", () => {
       conn.write("Name: SNK");
-    })
+    });
+
+    conn.on("data", (data) => {
+      console.log('server say: ', data)
+    });
   
     return conn;
 };
